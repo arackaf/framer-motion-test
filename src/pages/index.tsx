@@ -12,7 +12,11 @@ export default function Home() {
       <button onClick={() => setOpen((val) => !val)} className="border p-2 self-start">
         Toggle
       </button>
-      <AnimatePresence>
+      <AnimatePresence
+        onExitComplete={() => {
+          console.log("EXIT");
+        }}
+      >
         {open ? (
           <motion.div
             initial={{
