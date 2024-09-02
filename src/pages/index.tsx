@@ -16,7 +16,7 @@ export default function Home() {
         animate={{
           width: open ? WIDTH : 0,
         }}
-        transition={{ type: "spring", damping: 10, mass: 1, stiffness: 100 }}
+        transition={{ type: "spring", damping: 10, mass: 0.25, stiffness: 100 /*restSpeed: 100, restDelta: 75*/ }}
         className="w-[0] h-[700px] bg-red-500"
       ></motion.div>
     </main>
