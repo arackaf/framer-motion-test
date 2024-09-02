@@ -1,3 +1,11 @@
+import { motion } from "framer-motion";
+
 export default function Home() {
-  return <main className={`flex min-h-screen flex-col items-center justify-between p-24`}>Hello World</main>;
+  return (
+    <main className={`flex flex-col p-24 gap-3`}>
+      <div>Hello</div>
+      <button className="border p-2 self-start">Toggle</button>
+      <div className="w-[500px] h-[700px] bg-red-500"></div>
+    </main>
+  );
 }
